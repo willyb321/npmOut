@@ -1,0 +1,41 @@
+{
+  "name": "npmout",
+  "version": "0.0.0",
+  "description": "Checks for outdated deps in NPM",
+  "license": "MIT",
+  "repository": "willyb321/npmout",
+  "author": {
+    "name": "William Blythe",
+    "email": "wbwilliam7@gmail.com",
+    "url": "tehsuperwilly.tech"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && nyc ava"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    ""
+  ],
+  "dependencies": {
+    "meow": "^3.7.0",
+    "npm": "^3.10.7",
+    "prompt": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "nyc": "^7.1.0",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}

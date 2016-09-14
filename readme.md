@@ -1,4 +1,4 @@
-# npmout [![Build Status](https://travis-ci.org/willyb321/npmout.svg?branch=master)](https://travis-ci.org/willyb321/npmout)
+# npmout [![Build Status](https://travis-ci.org/willyb321/npmOut.svg?branch=master)](https://travis-ci.org/willyb321/npmout)
 
 > Checks for outdated deps in NPM
 

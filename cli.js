@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 'use strict';
+
 const npm = require('npm');
 const prompt = require('prompt');
 
@@ -12,16 +13,12 @@ function onErr(err) {
 }
 
 npm.load(() => {
-	npm.commands.outdated({json: true}, (err, data) => {
+	npm.commands.outdated({
+		json: false
+	}, (err, data) => {
 		console.log(data);
 		if (err) {
-			console.log(err);
+			return onErr(err);
 		}
-		npm.commands.update((err, d) => {
-					if (err) {
-						console.log(err);
-					}
-					console.log(d);
-				});
-		});
 	});
+});
